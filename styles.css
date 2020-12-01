@@ -1,0 +1,165 @@
+main {
+    margin-top: 80px;
+}
+
+body{
+    background-color: rgb(200, 230, 255);
+    font-family: 'Franklin Gothic Medium', 'Verdana', Arial, sans-serif;
+}
+
+nav.main-menu{
+    background-color: rgb(134, 190, 209);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 4px 4px #0003;
+    padding-left: 2em; 
+}
+
+nav.main-menu ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav.main-menu li {
+    font-weight: bold;
+    color: rgb(65, 96, 163);
+    margin: 5px;
+    display: inline-block;
+    width: 200px;
+    padding: 6px;
+    background-color: lightyellow;
+    user-select: none;
+    position:relative;
+}
+
+a:visited {
+    color: rgb(65, 96, 163);
+}
+
+a:hover {
+    color: lightblue;
+}
+
+a:active {
+    color: rgb(65, 96, 163);
+}
+
+a:link {
+    color: rgb(65, 96, 163);
+}
+
+nav.main-menu li:hover .pulldown-menu {
+    display: block;
+}
+
+nav.main-menu .pulldown-menu {
+    display: none;
+    position: absolute;
+    color: rgb(65, 96, 163);
+    border: 1px solid white;
+    border-radius: 4px;
+    top: 30px;
+    left: -1px;
+}
+
+nav.main-menu .pulldown-menu li {
+    color: rgb(65, 96, 163);
+    display: block;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.rainbow {
+    text-align: center;
+    font-size: 175px;
+    padding: 0px;
+}
+.rainbow_animated {
+    background: linear-gradient(to left, rgb(255, 136, 255), rgb(127, 85, 156), rgb(118, 218, 248), rgb(145, 255, 145), rgb(255, 255, 166), rgb(255, 205, 112), rgb(255, 126, 126));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.intro{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: lightyellow;
+}
+
+.title {
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(65, 96, 163);
+    padding: 20px;
+}
+
+.contact {
+    text-align: center;
+    padding: 30px;;
+    font-size: 35px;
+    line-height: 65px;
+}
+
+.bio {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.resume {
+    text-align: center;
+    font-size: 35px;
+}
+
+.proj-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.descript{
+    font-size: 20px;
+    text-align: center;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+
+.resume {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas{
+    margin: 0 auto;
+}

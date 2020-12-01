@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li>Personal Information
+                    <ul class="pulldown-menu">
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="title">About Me, Camila Grisanti</div>
+            <img class="my-photo" src = "images/Screen Shot 2020-11-29 at 10.06.35 PM.png" alt="Camila Grisanti Picture" height = 400> 
+            <div class="bio">I am third-year undergraduate student at Northwestern Universiy studying Neuroscience with 
+                a concentration in Human Behavior and Cognition and Computer Science at the Weinberg college of Arts and Sciences. 
+                I work as a peer mentor and teaching assistant for an introductory Python course, helping to lead discussion sections and 
+                grade homeworks, quizzes and projects. I am not on a pre-medicine track, and intend to pursue Neuropsychology after graduating.
+                In addition, I am a senior health educator at Peer Health Exchange, teaching health education to freshmen in Chicago Public Schools that
+                do not offer health education courses as part of their curriculum.<br> 
+ 
+            <br> 
+            Click
+            <a href="resume.html">here</a>
+            to view my resume.
+            <br>
+            <br> 
+            Check out below the breakdown of how much time I spend on homework this quarter.
+            </div>
+        </main>
+
+        <div class="container">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+        <script>
+            Chart.defaults.global.defaultFontFamily = 'Verdana';
+            Chart.defaults.global.defaultFontColor = '#000';
+            Chart.defaults.global.default
+
+            var classChart = new Chart(myChart, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Introduction to Islam',
+                        'Introduction to Computer Systems',
+                        'Introduction to HCI',
+                        'Research Methods in Psychology'
+                    ],
+                    datasets: [
+                        {
+                            label: "Time (hours)",
+                            data: [4, 10, 5, 6],
+                            backgroundColor: [
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)'
+                        ],
+                        borderWidth: 1
+                        }
+                    ] 
+                },
+                options: {
+                    responsive: false,
+                    title: {
+                        display: true,
+                        text: "Hours spent on homework in Fall 2020, broken down by class"
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
