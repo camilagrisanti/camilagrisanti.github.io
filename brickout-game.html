@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li>Personal Information
+                    <ul class="pulldown-menu">
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="rainbow_animated" id="title">Brick Out Game Project</div>
+            <div class="descript">
+                <p1>
+                    <br>
+                    <br>
+                    In this project, I used C++ to code the classic brick out game shown in the video below.
+                </p1>
+            </div>
+            <div class="pictures">
+                <video width="800" height="600" autoplay>
+                    <source src="images/brickout_video.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+            <br>
+            <br>
+
+            <div class = "descript">
+                <p1>
+                    The project consisted of over 9 files that worked together using different classes and user interfaces to generate the game. 
+                    The code included generating different positions of the ball according to which state the game was in. For instance,
+                    during the playing state, the ball would need to bounce up from the paddle and reflect off in order to hit the bricks up top.
+                    Once the ball's position reached the bottom of the screen instead of the paddle, its position would need to be updated to
+                    the paddle's position to begin again.
+                    <br>
+                    <br>
+                    The bricks were coded using loops and tagged so that each brick that was hit would be successfully deleted from the screen.
+                    In addition, the UI file connected the mouse and space bar to the game, where the mouse can move around the paddle to be 
+                    aimed at where the ball is going to land, and the space bar can be used to eject the ball initially to begin playing. 
+                </p1>
+            </div>
+        </main>
+    </body>
+</html>
